@@ -46,6 +46,37 @@
   font-stretch: normal;
   font-display: swap;
 }
+:root {
+  --color-primary: #005299;
+  --neutral-white: #fff;
+  --neutral-black: #111;
+  --neutral-grey-dark: #111111a3;
+  --neutral-grey-light: #11111112;
+  --color-accent: #dd1515;
+  --light-blue: #edf7fe;
+  --padding-4: 4px;
+  --padding-8: 8px;
+  --padding-12: 12px;
+  --padding-16: 16px;
+  --padding-20: 20px;
+  --padding-24: 24px;
+  --padding-32: 32px;
+  --padding-36: 36px;
+  --padding-40: 40px;
+  --padding-48: 48px;
+  --padding-56: 56px;
+  --padding-60: 60px;
+  --padding-80: 80px;
+  --border-4: 4px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+}
+
 * {
   box-sizing: border-box;
 }
