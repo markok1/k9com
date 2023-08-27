@@ -239,19 +239,6 @@ h3 {
   padding: var(--padding-8, 8px);
 }
 
-.nav .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--padding-4, 4px) var(--padding-16, 16px);
-}
-
-.nav-buttons {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-8, 8px);
-}
-
 .stroke {
   padding: 0px 9px;
   width: 100%;
@@ -291,6 +278,57 @@ h3 {
 .bottom-boxes .small-text-box > div {
   display: flex;
   gap: var(--spacing-4, 4px);
+}
+
+.email-box {
+  position: relative;
+  max-width: 358px;
+  width: 100%;
+  margin: auto;
+}
+.email-box svg {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.email-box input[type=email] {
+  display: flex;
+  padding: var(--padding-12, 12px) var(--padding-16, 16px) var(--padding-12, 12px) 52px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: var(--border-4, 4px);
+  border: 1px solid var(--neutral-grey-light, rgba(17, 17, 17, 0.07));
+  background: var(--neutral-white, #fff);
+}
+.email-box input[type=email]::-moz-placeholder {
+  color: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
+  font-family: "Graphik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.email-box input[type=email]::placeholder {
+  color: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
+  font-family: "Graphik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-4, 4px) var(--padding-16, 16px);
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
 }
 
 .hero {
@@ -428,44 +466,6 @@ h3 {
   position: absolute;
   top: 0px;
   right: 0px;
-}
-
-.email-box {
-  position: relative;
-  max-width: 358px;
-  width: 100%;
-  margin: auto;
-}
-.email-box svg {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-.email-box input[type=email] {
-  display: flex;
-  padding: var(--padding-12, 12px) var(--padding-16, 16px) var(--padding-12, 12px) 52px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border-radius: var(--border-4, 4px);
-  border: 1px solid var(--neutral-grey-light, rgba(17, 17, 17, 0.07));
-  background: var(--neutral-white, #fff);
-}
-.email-box input[type=email]::-moz-placeholder {
-  color: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
-  font-family: "Graphik", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-.email-box input[type=email]::placeholder {
-  color: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
-  font-family: "Graphik", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .get-a-quote {
