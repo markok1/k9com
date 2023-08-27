@@ -1,0 +1,36 @@
+.why-choose-us {
+  padding: var(--padding-60, 60px) var(--padding-16, 16px);
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-40, 40px);
+  }
+}
+.why-top {
+  display: flex;
+  padding-top: var(--padding-20, 20px);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-16, 16px);
+  h2 {
+    color: var(--color-primary, #005299);
+  }
+}
+.why-us-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-28, 28px);
+  img {
+    border-radius: var(--border-4, 4px);
+  }
+  .why-us-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-16, 16px);
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-8, 8px);
+    }
+  }
+}

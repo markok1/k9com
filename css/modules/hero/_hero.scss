@@ -1,0 +1,39 @@
+.hero {
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  margin-bottom: 24px;
+  .hero-content {
+    display: flex;
+    padding: var(--padding-32, 32px) var(--padding-16, 16px);
+    flex-direction: column;
+    gap: var(--spacing-32, 32px);
+    h1 {
+      margin-bottom: 12px;
+    }
+    .subtext {
+      color: var(--neutral-grey-dark, #111111a3);
+    }
+    .benefits-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      max-width: 358px;
+      width: 100%;
+      margin: auto;
+      .benefit {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+  }
+  .small-text-box {
+    gap: var(--spacing-12, 12px);
+    .text-small {
+      font-weight: 500;
+    }
+  }
+}

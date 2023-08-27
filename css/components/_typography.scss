@@ -1,0 +1,60 @@
+h1 {
+  color: var(--color-primary, #005299);
+  text-align: center;
+  font-family: $roboto-condensed;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+}
+h2 {
+  text-align: center;
+  font-family: $roboto-condensed;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: capitalize;
+}
+h3 {
+  color: var(--neutral-black, #111);
+  font-family: $roboto-condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+}
+.text {
+  color: var(--neutral-black, #111);
+  font-family: $roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.text-small {
+  color: var(--neutral-black, #111);
+  font-family: $roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.sub-text {
+  text-align: center;
+  font-family: $roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.sub-title {
+  color: var(--neutral-black, #111);
+  text-align: center;
+  font-family: $graphik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}

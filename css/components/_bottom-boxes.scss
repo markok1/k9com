@@ -1,0 +1,18 @@
+.bottom-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-16, 16px);
+  width: 100%;
+  .small-text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-16, 16px);
+    > div {
+      display: flex;
+      gap: var(--spacing-4, 4px);
+    }
+  }
+}
