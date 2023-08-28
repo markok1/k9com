@@ -1,7 +1,9 @@
 //stroke is a horisontal devider
 .stroke {
-  padding: 0px 9px;
+  // padding: 0px 9px;
+  max-width: calc(100vw - 18px);
   width: 100%;
+  margin: auto;
   height: 1px;
   background: var(--neutral-grey-light, rgba(17, 17, 17, 0.07));
 }
