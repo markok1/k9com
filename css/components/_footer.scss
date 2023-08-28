@@ -6,6 +6,9 @@
 
     padding: var(--padding-40, 40px) var(--padding-16, 16px);
     gap: var(--spacing-16, 16px);
+    .image:first-child {
+      text-align: center;
+    }
   }
 }
 .location-and-phone {
