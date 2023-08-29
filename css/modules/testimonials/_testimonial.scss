@@ -11,9 +11,14 @@
       padding-top: 32px;
       color: var(--color-primary, #005299);
     }
-    .small-text-box {
-      .text-small:first-child {
-        font-weight: 500;
+    .bottom-boxes {
+      .small-text-box {
+        width: 100%;
+        gap: unset;
+        justify-content: space-between;
+        .text-small {
+          font-size: 13px;
+        }
       }
     }
   }
@@ -53,7 +58,7 @@
       color: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
     }
   }
-  .stars {
+  .google-icon {
     position: absolute;
     top: 0px;
     right: 0px;

@@ -2,6 +2,43 @@
   .image {
     display: flex;
     justify-content: center;
+    position: relative;
+    .google-reviews-box {
+      position: absolute;
+
+      top: 20px;
+
+      cursor: pointer;
+
+      display: flex;
+      padding: 3px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: var(--spacing-8, 8px);
+
+      border-radius: 15px;
+      background: var(--neutral-white, #fff);
+
+      color: var(--color-primary, #005299);
+      font-family: $roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+
+      width: 100%;
+
+      position: absolute;
+      bottom: 20px;
+      .badge {
+        flex-shrink: 0;
+      }
+    }
   }
   margin-bottom: 24px;
   .hero-content {
@@ -12,8 +49,8 @@
     h1 {
       margin-bottom: 12px;
     }
-    .subtext {
-      color: var(--neutral-grey-dark, #111111a3);
+    .sub-text {
+      color: var(--neutral-grey-dark, rgba(17, 17, 17, 0.64));
     }
     .benefits-list {
       display: flex;

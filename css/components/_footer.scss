@@ -1,4 +1,7 @@
 .footer {
+  //added for sticky bottom navbar
+  padding-bottom: 60px;
+  // 60 is the height of the sticky bar
   background: var(--neutral-extra-light, rgba(17, 17, 17, 0.03));
   .wrapper {
     display: flex;
