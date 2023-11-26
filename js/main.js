@@ -52,3 +52,70 @@
     });
   }
 })(jQuery);
+
+// sliders
+var whichBigSlider = 0;
+var whichSmallSlider = 0;
+
+$(document).ready(function () {
+  // Add click event to all image-preview elements
+  $(".image-preview img").on("click", function () {
+    // Find the closest testimonial element
+    var $testimonial = $(this).closest(".testimonial");
+
+    // Get the index of the testimonial (slide number)
+    whichBigSlider = $(".testimonial").index($testimonial);
+
+    // Get the index of the clicked image inside .image-preview
+    whichSmallSlider = $(this).parent().index();
+    $(".testimonial-slider-holder").slick("slickGoTo", whichBigSlider);
+  });
+});
+
+$(".testimonial-slider-holder").slick({
+  // cssEase: "cubic-bezier(0.600, -0.400, 0.735, 0.045)",
+  initialSlide: 0,
+  dots: false,
+  arrows: true,
+  infinite: false,
+  speed: 1500,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  autoplay: false,
+  draggable: false,
+  swipe: false,
+  // autoplaySpeed: 3000,
+  prevArrow:
+    "<button type='button' class='slick-prev pull-left big-slider'> <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M15 6L9 12L15 18' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg></button>",
+  nextArrow:
+    "<button type='button' class='slick-next pull-right big-slider'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M9 6L15 12L9 18' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg></button>",
+});
+
+// $(".uploaded-images-holder").slick({
+//   // cssEase: "cubic-bezier(0.600, -0.400, 0.735, 0.045)",
+
+//   initialSlide: 0,
+//   dots: false,
+//   arrows: true,
+//   infinite: false,
+//   speed: 1500,
+//   slidesToShow: 1,
+//   adaptiveHeight: true,
+//   autoplay: false,
+//   draggable: false,
+//   swipe: false,
+//   // autoplaySpeed: 3000,
+//   focusOnSelect: true,
+//   prevArrow:
+//     "<button type='button' class='slick-prev pull-left small-slider'> <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M15 6L9 12L15 18' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg></button>",
+//   nextArrow:
+//     "<button type='button' class='slick-next pull-right small-slider'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'><path d='M9 6L15 12L9 18' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg></button>",
+// });
+
+// close and open testimonail popup
+$(".close-testimonial-popup").on("click", function () {
+  $(".testimonial-popup").addClass("hide-testimonial");
+});
+$(".testimonial-images-preview .image-preview img ").on("click", function () {
+  $(".testimonial-popup").removeClass("hide-testimonial");
+});

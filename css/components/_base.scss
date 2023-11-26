@@ -29,7 +29,7 @@ input:focus {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1260px;
   margin: auto;
 }
 
@@ -44,4 +44,10 @@ ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+textarea {
+  outline: 0px;
+}
+button {
+  cursor: pointer;
 }

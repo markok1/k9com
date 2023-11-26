@@ -11,3 +11,15 @@
   align-items: center;
   gap: var(--spacing-8, 8px);
 }
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 4px 0px;
+    .nav-buttons {
+      max-width: 170px;
+      width: 100%;
+    }
+    .phone {
+      width: 100%;
+    }
+  }
+}

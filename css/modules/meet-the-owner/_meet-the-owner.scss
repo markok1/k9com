@@ -18,6 +18,9 @@
       color: var(--neutral-white, #fff);
     }
   }
+  .image {
+    text-align: center;
+  }
 }
 .owner-text {
   .text {
@@ -26,6 +29,50 @@
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .meet-the-owner {
+    .wrapper {
+      position: relative;
+      padding: 80px 10px;
+      h2 {
+        width: calc(50% - 20px);
+        padding-top: unset;
+        text-align: left;
+      }
+    }
+
+    .image {
+      width: calc(50% - 20px);
+      position: absolute;
+      right: 10px;
+      max-width: 550px;
+      height: 320px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .owner-text {
+    width: calc(50% - 20px);
+    .text {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .meet-the-owner {
+    .wrapper {
+      padding-bottom: 80px;
+      h2 {
+        padding-top: 56px;
+      }
     }
   }
 }

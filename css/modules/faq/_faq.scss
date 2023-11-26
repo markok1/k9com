@@ -76,3 +76,17 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .questions {
+    max-width: 100%;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    gap: 20px;
+    // justify-content: center;
+    .qa-item {
+      width: calc(50% - 10px);
+      height: fit-content;
+    }
+  }
+}

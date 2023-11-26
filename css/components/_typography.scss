@@ -9,6 +9,7 @@ h1 {
   text-transform: capitalize;
 }
 h2 {
+  color: var(--color-primary, #005299);
   text-align: center;
   font-family: $roboto-condensed;
   font-size: 36px;
@@ -44,17 +45,38 @@ h3 {
 .sub-text {
   text-align: center;
   font-family: $roboto;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 24px;
 }
 .sub-title {
   color: var(--neutral-black, #111);
   text-align: center;
-  font-family: $graphik;
+  font-family: Arial;
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+}
+.italic-font {
+  color: var(--neutral-black, #111);
+  text-align: center;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  h2,
+  h1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+    letter-spacing: -0.4px;
+  }
 }
